@@ -1,0 +1,126 @@
+
+:root {
+    --marronOscuro: #3e2611;
+    --marronClaro: #b5855b;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fuente-principal {
+    font-family: "Laila", serif;
+}
+
+
+/* Pantallas de tablet */
+@media screen and (min-width: 700px) {
+    .container-imagenes-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+}
+
+/* Pantallas de celular */
+
+@media screen and (max-width: 699px) {
+    /* Navbar */
+    .container-navbar.px-5.py-2 {
+        flex-direction: column;
+    }
+    .enlace-logo {
+        padding-bottom: 10px;
+    }
+
+    /* Presentacion */
+    .container-hero {
+        height: 250px;
+    }
+
+    /* Nosotros */
+
+    .contenedor-nosotros {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenedor-descripcion-nosotros iframe {
+        margin-bottom: 20px;
+        height: 250px;
+    }
+
+    .contenedor-img-nosotros {
+        width: 95%;
+        height: 20rem;
+        margin: 0 10px;
+    }
+    
+    /* Galeria */
+    .container-imagenes-galeria {
+        grid-template-columns: repeat(2, calc(90% - 170px));
+    }
+
+    /* Menu */
+    .contenedor-opciones {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 130px;
+    }
+
+    .col.contenedor-opcion {
+        width: 100px;
+        height: 100px;
+    }
+
+    .texto-opcion {
+        transform: translate(100px, -60px);
+    }
+    /* Menu y items */
+    .menu-header .menu-title {
+        top: -40px;
+        left: 160px;
+    }
+    .menu-header .menu-icono {
+        left: 90px;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        padding: 8px;
+        z-index: 1;
+    }
+    .cont.text-center .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .items .contenedor-item {
+        height: 330px;
+    }
+    /* Footer */
+    #col1 :first-child { 
+        margin: 0 100px 0 0;
+    }
+
+    .col {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .link-userName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-userName a, .name{
+        display: flex;
+        min-width: 190px;
+    }
+}

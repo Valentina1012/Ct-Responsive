@@ -1,0 +1,17 @@
+.container-galeria {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.titulo-galeria {
+    margin-bottom: 16px;
+    border-bottom: solid 2px var(--marronOscuro);
+}
+
+.container-imagenes-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0;
+    gap: 16px;
+}

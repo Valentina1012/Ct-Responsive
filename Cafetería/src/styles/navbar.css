@@ -1,0 +1,41 @@
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #ffffce; */
+}
+
+.enlace-logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.enlace-logo h3 {
+    color: var(--marronClaro);
+    margin-left: 4px;
+}
+
+.container-navbar .link-navbar {
+    color: var(--marronOscuro);
+    margin-left: 32px;
+    font-weight: bold;
+}
+
+.container-navbar .link-navbar:first-child {
+    margin-left: 0;
+}
+
+.imagen-logo {
+    height: 28px;
+}
+
+.link-navbar{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer; 
+  }
+  
+  .link-navbar:hover {
+    color: #0275f0;
+  }

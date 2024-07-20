@@ -1,0 +1,16 @@
+.container-hero {
+    background-image: url('../img/hero_background.png');
+    height: 576px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-hero-description {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.container-hero-description > * {
+    color: white;
+}

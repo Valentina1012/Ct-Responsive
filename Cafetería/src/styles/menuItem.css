@@ -1,0 +1,93 @@
+.contenedor-item {
+    background-color: #ffffce;
+    display: grid;
+    grid-template-columns: 48% 52%;
+    border-radius: 4px;
+    border: solid 1px var(--marronOscuro);
+}
+
+.contenedor-img-cantidad {
+    background-color: var(--marronClaro);
+    border-radius: 4px;
+}
+
+.contenedor-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.imagen-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.2s ease;
+}
+
+.contenedor-item:hover > .contenedor-img-cantidad .contenedor-img .imagen-item {
+    scale: 1.2;
+}
+
+.contenedor-cantidad-precio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+}
+
+.contenedor-cantidad-precio p {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.3em;
+    color: var(--marronOscuro);
+    grid-column: 1 / 3;
+}
+
+.contenedor-cantidad-precio form {
+    grid-column: 1 / 3;
+    display: flex;
+}
+
+.contenedor-cantidad-precio input {
+    border-radius: 4px;
+    border: 1px solid var(--marronOscuro);
+    font-size: 1em;
+    outline: none;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 8px;
+}
+
+.contenedor-cantidad-precio input::placeholder{
+    color: #AFAFAF;
+}
+
+.contenedor-cantidad-precio form button {
+    background-color: white;
+    border: 1px solid var(--marronOscuro);
+    color: var(--marronOscuro);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+.contenedor-cantidad-precio form button:hover {
+    background-color: var(--marronOscuro);
+    color: white;
+}
+
+.contenedor-info {
+    padding: 8px 16px;
+}
+
+.contenedor-info h5 {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px var(--marronOscuro);
+}
+
+.contenedor-info p {
+    text-align: left;
+}

@@ -1,0 +1,239 @@
+.contenedor-menues {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.menu-titulo {
+    border-bottom: solid 2px var(--marronOscuro);
+}
+
+.contenedor-menues-precios {
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100% + 64px); */
+    /* margin-left: -32px; */
+}
+
+.contenedor-opciones {
+    width: 100%;
+    height: 192px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont.text-center .contenedor-opcion {
+    max-width: 192px;
+    border-radius: 50%;
+    transition: all .1s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-opcion .imagen-opcion {
+    width: 80%;
+}
+
+.contenedor-opcion .texto-opcion {
+    font-size: 1.2em;
+    font-weight: 100;
+    background-color: #ffffce;
+    padding: 4px;
+    width: 110%;
+    border-radius: 2px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 0px #bbb;
+    transition: all 0.1s ease;
+}
+
+.contenedor-opcion:hover .texto-opcion {
+    letter-spacing: 2.8px;
+    box-shadow: 4px 4px 8px #bbb;
+}
+
+/* Color de iconos */
+
+.cont.text-center .contenedor-opcion:nth-child(1){
+    background-color: #4e2f13;
+}
+
+.cont.text-center .contenedor-opcion:nth-child(1):hover {
+    background: #6b3a11;
+}
+
+.cont.text-center .contenedor-opcion:nth-child(2){
+    background-color: #89D3E3;
+}
+
+.cont.text-center .contenedor-opcion:nth-child(2):hover {
+    background: #68c3df;
+}
+
+.cont.text-center .contenedor-opcion:nth-child(3){
+    background-color: #ee9f54;
+}
+
+.cont.text-center .contenedor-opcion:nth-child(3):hover {
+    background: #ee8c31;
+}
+
+/* FIN Color de iconos */
+
+.menu-header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 104px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.menu-header.cafe,
+.menu-header.cafeFrio,
+.menu-header.jugo {
+    background-color: #AF7026;
+    height: 2px;
+}
+
+.menu-header.cafeFrio {
+    background-color: #4992D4;
+}
+
+.menu-header.jugo {
+    background-color: #F6E54B;
+}
+
+.menu-header .menu-title {
+    position:absolute;
+    top: -40px;
+    left: 300px;
+    text-transform: capitalize;
+}
+
+.menu-header .menu-icono {
+    position:absolute;
+    top: 0;
+    left: 200px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    padding: 8px;
+    z-index: 1;
+}
+
+.menu-header.cafe .menu-icono {
+    background-color: #3E2611;
+}
+
+.menu-header.cafeFrio .menu-icono {
+    background-color: #89D3E3;
+}
+
+.menu-header.jugo .menu-icono {
+    background-color: #E39F60;
+}
+
+.menu-header .menu-icono img {
+    width: 100px;
+}
+
+/* Items Menu y Carrito */
+
+.cont .menu .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 16px;
+}
+
+.cont.text-center .menu {
+    display: grid;
+    grid-template-columns: 75% auto;
+    column-gap: 16px;
+}
+
+.cont.text-center .menu .menu-content{
+    width: 100%;
+}
+
+.cont .menu .cart {
+    border: solid 1px var(--marronOscuro);
+    background-color: #ffffce;
+    border-radius: 4px;
+    padding: 8px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont .menu .cart .cart-title {
+    font-size: 1.22em;
+    margin-bottom: 16px;
+}
+
+.cont .menu .cart .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cont .menu .cart .cart-list li {
+    display: flex;
+}
+
+.cont .menu .cart .cart-list li span{
+    margin-right: 4px;
+    color: black;
+    font-size: 1.1em;
+}
+
+.bebida-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bebida-price {
+    white-space: nowrap;
+}
+
+.cont .menu .cart .cart-total {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.cont .menu .cart .cart-total .total-price {
+    font-size: 1.22em;
+    font-weight: 600;
+    grid-column: 1 / 3;
+    text-align: left;
+    border-top: solid 1px var(--marronOscuro);
+    color: black;
+    padding: unset;
+}
+
+.cont .menu .cart .total-cart,
+.cont .menu .cart .reset-cart {
+    background-color: #B5855B;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.02em;
+    transition: all 0.2s ease;
+}
+
+.cont .menu .cart .total-cart:hover {
+    background-color: var(--marronOscuro);
+}
+
+.cont .menu .cart .reset-cart {
+    background-color: #f16161;
+}
+
+.cont .menu .cart .reset-cart:hover {
+    background-color: red;
+}
