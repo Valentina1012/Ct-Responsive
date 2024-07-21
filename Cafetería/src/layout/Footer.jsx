@@ -8,7 +8,7 @@ function Footer() {
     <>
       
       <section className="container text-center">
-        <div className="row">
+        <div className="row-integrantes">
           <div className="col" id="col1">
             <span>Integrantes</span>
             <span>Github</span>

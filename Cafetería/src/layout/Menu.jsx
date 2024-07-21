@@ -82,7 +82,7 @@ function Menu() {
                     return <li key={bebida.id}>
                       <span className='cantidad'>x{bebida.cantidad} </span>
                       <span className='bebida-title'>{bebida.title} </span>
-                      <span className='bebida-price'><b>${bebida.price*bebida.cantidad}</b> (${bebida.price})</span>
+                      <span className='bebida-price'><b>${bebida.price*bebida.cantidad}</b> <i className='unidad'>(${bebida.price})</i></span>
                     </li>
                   })
                 }
