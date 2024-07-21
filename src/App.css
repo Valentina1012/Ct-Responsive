@@ -48,7 +48,7 @@ a {
 
 /* Pantallas de celular */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 721px) {
     /* Navbar */
     .container-navbar.px-5.py-2 {
         flex-direction: column;
@@ -113,6 +113,11 @@ a {
         transform: translate(12px, -5px);
     }
     /* Menu y items */
+    .contenedor-menues {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
     .menu-header .menu-title {
         top: -40px;
         left: 160px;
@@ -140,9 +145,7 @@ a {
     }
 
     .bebida-price .unidad{
-        position: relative;
-        top: 15px;
-        left: -60px;
+        display: none;
     }
 
     /* Footer */
