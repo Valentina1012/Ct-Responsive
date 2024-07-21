@@ -83,6 +83,7 @@ a {
     /* Galeria */
     .container-imagenes-galeria {
         grid-template-columns: repeat(2, 50%);
+        gap: 0;
     }
     .container-imagen{
        width: 100%;
