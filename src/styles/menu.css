@@ -1,5 +1,5 @@
 .contenedor-menues {
-    max-width: 1120px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -142,13 +142,13 @@
 .cont .menu .items{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    gap: 16px;
+    gap: 10px;
 }
 
 .cont.text-center .menu {
     display: grid;
     grid-template-columns: 75% auto;
-    column-gap: 16px;
+    column-gap: 15px;
 }
 
 .cont.text-center .menu .menu-content{
@@ -157,7 +157,7 @@
 
 .cont .menu .cart {
     border: solid 1px var(--marronOscuro);
-    background-color: #ffffce;
+    background-color: #f7e5cb;
     border-radius: 4px;
     padding: 8px 16px 16px 16px;
     display: flex;

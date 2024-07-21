@@ -69,6 +69,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+    z-index: 100;
 }
 
 .boton-ir-arriba:hover {

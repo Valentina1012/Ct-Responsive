@@ -113,9 +113,9 @@ a {
         transform: translate(12px, -5px);
     }
     /* Menu y items */
-    .contenedor-menues {
-        width: 100%;
-        margin: 0 auto;
+    .menu {
+        padding: 0 12px;
+        gap: 0;
     }
     
     .menu-header .menu-title {
