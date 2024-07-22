@@ -177,6 +177,7 @@ a {
     .col {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
     .row-integrantes {
         flex-direction: column;

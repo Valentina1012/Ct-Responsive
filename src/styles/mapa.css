@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
+    padding: 20px 25px;
 }
 
 .contenedor-contacto h2 {

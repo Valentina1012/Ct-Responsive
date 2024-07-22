@@ -1,3 +1,7 @@
+.container-galeria.mb-4 {
+    margin: 30px 0;
+}
+
 .container-imagen-galeria {
     list-style-type: none;
     width: 100%;
