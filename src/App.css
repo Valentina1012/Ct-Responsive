@@ -117,7 +117,7 @@ a {
         padding: 0 12px;
         gap: 0;
     }
-    
+
     .menu-header .menu-title {
         top: -40px;
         left: 160px;
@@ -135,7 +135,24 @@ a {
     }
 
     .items .contenedor-item {
-        height: 330px;
+        height: 390px;
+        grid-template-columns: 100%;
+    }
+    .contenedor-img {
+        height: 300px;
+    }
+    .contenedor-info {
+        display: none;
+        position: absolute;
+        height: 300px;
+        width: 58%;
+        color: #000000;
+    }
+    .contenedor-item:hover > .contenedor-info{
+        display: block;
+    }
+    .contenedor-item:hover > .contenedor-img-cantidad .contenedor-img .imagen-item {
+        filter: blur(8px);
     }
     /* Aside de precios */
     .cart {
