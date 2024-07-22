@@ -141,7 +141,7 @@
 
 .cont .menu .items{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18em, 45%));
     gap: 10px;
 }
 
@@ -159,7 +159,7 @@
     border: solid 1px var(--marronOscuro);
     background-color: #f7e5cb;
     border-radius: 4px;
-    padding: 8px 16px 16px 16px;
+    padding: 8px 14px 16px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,7 +183,7 @@
 .cont .menu .cart .cart-list li span{
     margin-right: 4px;
     color: black;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .bebida-title {
