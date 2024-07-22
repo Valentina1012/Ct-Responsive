@@ -16,37 +16,7 @@ a {
     font-family: "Laila", serif;
 }
 
-/* Pantallas de tablet */
-/* @media screen and (min-width: 720px) and (max-width: 2000px){
-    .container-imagenes-galeria {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-    }    
-    
-    #col1 :first-child { 
-        margin: 0 100px 0 0;
-    }
-
-    .col {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .row-integrantes {
-        flex-direction: column;
-        width: 100%;
-    }
-    .link-userName{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .link-userName a, .name{
-        display: flex;
-        min-width: 190px;
-    }
-} */
-
-/* Pantallas de celular */
+/* Pantalla de celular */
 
 @media screen and (max-width: 720px) {
     /* Navbar */
@@ -93,6 +63,7 @@ a {
         width: 50%;
         justify-content: center;
     }
+
     /* Menu */
     .contenedor-opciones {
         flex-direction: column;
@@ -112,7 +83,8 @@ a {
     .texto-opcion, .imagen-opcion {
         transform: translate(12px, -5px);
     }
-    /* Menu y items */
+
+    /* Menu e items */
     .menu {
         padding: 0 12px;
         gap: 0;
@@ -151,7 +123,7 @@ a {
         height: 300px;
         width: 72%;
         color: #000000;
-        padding: 5px;
+        padding: 5px 0;
     }
     .contenedor-item:hover > .contenedor-info{
         display: block;
